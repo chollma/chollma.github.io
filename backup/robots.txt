@@ -1,4 +1,0 @@
-#Robots.txt for cooperhollmaier.com
-
-User-agent: *
-Disallow: /
