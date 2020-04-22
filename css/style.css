@@ -11,7 +11,7 @@
     --fw-bold: 900;
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #2ECC71;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -29,6 +29,10 @@
 
 
 /* General Styles */
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background: var(--clr-light);
@@ -128,7 +132,7 @@ header {
 .nav-link {
     color: inherit;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
     text-decoration: none;
 }
 
@@ -146,11 +150,27 @@ header {
     z-index: 1000;
 }
 
-.nav-open {
-    background: red;
+.nav-open .nav {
+    transform: translateX(0);
 }
 
-.hamburger {
+.nav-open .nav-enable {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger:before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
+.nav-open .hamburger .hamburger {
     display: block;
     position: relative;
 }
