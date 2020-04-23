@@ -11,7 +11,7 @@
     --fw-bold: 900;
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #2ECC71;
+    --clr-accent: #32a852;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -131,7 +131,7 @@ header {
 
 .nav-link {
     color: inherit;
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-reg);
     font-size: var(--fs-h2);
     text-decoration: none;
 }
@@ -183,6 +183,8 @@ header {
     height: 3px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
+    display: block;
+    position: relative;
 }
 
 .hamburger::before,
