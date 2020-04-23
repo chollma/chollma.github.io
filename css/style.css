@@ -15,6 +15,7 @@
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
+    --fs-tiny: 1rem;
     --fs-body: 1rem;
 }
 
@@ -230,6 +231,11 @@ header {
 
 .footer-link:hover {
     text-decoration: underline;
+}
+
+.footer-copyright {
+    color: var(--clr-light);
+    font-size: var(--fs-tiny);
 }
 
 .social-list {
