@@ -7,16 +7,19 @@
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
+    --ff-logo: 'Russo One', monospace;
     --fw-reg: 300;
     --fw-bold: 900;
     --clr-light: #fff;
+    --clr-med: #f1f1f1;
     --clr-dark: #303030;
-    --clr-accent: hsl(136, 83%, 72%);
+    --clr-accent: #5197cd;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-tiny: 1rem;
     --fs-body: 1rem;
+    --bs-exp: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 800px) {
@@ -81,7 +84,7 @@ h3 {
 }
 
 
-/* header */
+/* Header */
 
 header {
     display: flex;
@@ -193,7 +196,41 @@ header {
 }
 
 
-/* footer */
+/* Experience */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: var(--bs-exp);
+    padding: 16px;
+    text-align: center;
+    background-color: var(--clr-med);
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Footer */
 
 .footer {
     background: #111;
