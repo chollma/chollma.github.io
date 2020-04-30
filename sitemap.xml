@@ -7,4 +7,20 @@
       <image:loc>https://cooperhollmaier.com/img/cooper.jpeg</image:loc>
     </image:image>
   </url> 
+  <url>
+    <loc>https://cooperhollmaier.com/about.html</loc>
+   
+  </url> 
+  <url>
+    <loc>https://cooperhollmaier.com/speaking.html</loc>
+    
+  </url> 
+  <url>
+    <loc>https://cooperhollmaier.com/thoughts.html</loc>
+    
+  </url> 
+  <url>
+    <loc>https://cooperhollmaier.com/adventures.html</loc>
+    
+  </url> 
 </urlset> 
