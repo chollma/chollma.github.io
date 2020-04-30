@@ -41,10 +41,9 @@ body {
 }
 
 img {
-    grid-column: 2 / 4;
+    grid-column: 2;
     max-width: 100ch;
     justify-self: center;
-    border-radius: 50%;
 }
 
 
