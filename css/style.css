@@ -131,6 +131,16 @@ li {
     opacity: .7;
 }
 
+.breadcrumbs {
+    align-items: center;
+    display: flex;
+    margin: 1em;
+}
+
+.seperator {
+    margin: 0 .75em;
+}
+
 
 /* Content */
 
