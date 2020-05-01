@@ -122,6 +122,11 @@ li {
     color: var(--clr-light);
 }
 
+.logo a:visited {
+    text-decoration: none;
+    color: var(--clr-light);
+}
+
 .logo-colored {
     color: var(--clr-accent);
 }
