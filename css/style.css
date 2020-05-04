@@ -195,8 +195,8 @@ li {
     padding-right: .5em;
 }
 
-.article-card-image {
-    border-radius: 0;
+.article-card-icon {
+    color: var(--clr-header);
 }
 
 .article-card-topic {
