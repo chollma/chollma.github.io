@@ -12,7 +12,7 @@
     --fw-article-card: 600;
     --fw-bold: 900;
     --clr-light: #fff;
-    --clr-med: #E0E0E0;
+    --clr-med: rgb(139, 139, 139);
     --clr-dark: #303030;
     --clr-accent: #E17A67;
     --clr-header: #555;
@@ -179,11 +179,11 @@ li {
 
 .article-card {
     grid-column: 2;
-    background-color: var(--clr-med);
+    background-color: var(--clr-light);
     margin-top: .5em;
     margin-bottom: .5em;
     padding: .5em;
-    border-radius: .5em;
+    border-radius: ;
     box-shadow: var(--bs-nhc);
 }
 
