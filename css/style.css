@@ -11,7 +11,7 @@
     --fw-reg: 300;
     --fw-bold: 900;
     --clr-light: #fff;
-    --clr-med: #f1f1f1;
+    --clr-med: #E0E0E0;
     --clr-dark: #303030;
     --clr-accent: #E17A67;
     --clr-header: #555;
@@ -170,6 +170,36 @@ li {
     display: grid;
     grid-template-areas: "header header header" "navigation main ads" "footer footer footer";
     grid-template-columns: minmax(1.2rem, 1fr) minmax(auto, 85ch) minmax(1.2rem, 1fr);
+}
+
+.article-card {
+    grid-column: 2;
+    background-color: var(--clr-med);
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em;
+    border-radius: 1em;
+    box-shadow: var(--bs-nhc);
+}
+
+.article-card:hover {
+    box-shadow: var(--bs-hc);
+}
+
+.article-card-title {
+    color: var(--clr-accent);
+}
+
+.article-card-topic {
+    background-color: var(--clr-header);
+    padding: .125em;
+    color: var(--clr-light);
+    font-weight: 100;
+    border-radius: .25em;
+}
+
+.about-me {
+    grid-column: 4;
 }
 
 
