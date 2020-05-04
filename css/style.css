@@ -9,12 +9,16 @@
     --ff-secondary: 'Russo One', monospace;
     --ff-logo: 'Russo One', monospace;
     --fw-reg: 300;
+    --fw-article-card: 600;
     --fw-bold: 900;
     --clr-light: #fff;
     --clr-med: #E0E0E0;
     --clr-dark: #303030;
     --clr-accent: #E17A67;
     --clr-header: #555;
+    --clr-topic-env: #52796F;
+    --clr-topic-edu: #1F739D;
+    --clr-topic-comm: #8A3222;
     --fs-h1: 1.5rem;
     --fs-h2: 1.25rem;
     --fs-h3: 1.15rem;
@@ -178,7 +182,7 @@ li {
     margin-top: .5em;
     margin-bottom: .5em;
     padding: .5em;
-    border-radius: 1em;
+    border-radius: .5em;
     box-shadow: var(--bs-nhc);
 }
 
@@ -188,6 +192,11 @@ li {
 
 .article-card-title {
     color: var(--clr-accent);
+    padding-right: .5em;
+}
+
+.article-card-image {
+    border-radius: 0;
 }
 
 .article-card-topic {
@@ -196,6 +205,43 @@ li {
     color: var(--clr-light);
     font-weight: 100;
     border-radius: .25em;
+    grid-column: 3;
+}
+
+.article-card-topic-seo {
+    background-color: var(--clr-header);
+    padding: .125em;
+    color: var(--clr-light);
+    font-weight: 100;
+    border-radius: .25em;
+    float: right;
+}
+
+.article-card-topic-env {
+    background-color: var(--clr-topic-env);
+    padding: .125em;
+    color: var(--clr-light);
+    font-weight: 100;
+    border-radius: .25em;
+    float: right;
+}
+
+.article-card-topic-edu {
+    background-color: var(--clr-topic-edu);
+    padding: .125em;
+    color: var(--clr-light);
+    font-weight: 100;
+    border-radius: .25em;
+    float: right;
+}
+
+.article-card-topic-comm {
+    background-color: var(--clr-topic-comm);
+    padding: .125em;
+    color: var(--clr-light);
+    font-weight: 100;
+    border-radius: .25em;
+    float: right;
 }
 
 .about-me {
