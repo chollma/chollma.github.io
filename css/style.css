@@ -15,6 +15,7 @@
     --clr-med: rgb(139, 139, 139);
     --clr-dark: #303030;
     --clr-accent: #99D3EA;
+    --clr-article-title: #1A607A;
     --clr-header: #555;
     --clr-topic-env: #52796F;
     --clr-topic-edu: #1F739D;
@@ -191,12 +192,12 @@ li {
 }
 
 .article-card-title {
-    color: var(--clr-accent);
+    color: var(--clr-article-title);
     padding-right: .5em;
 }
 
 .article-card-title a {
-    color: var(--clr-accent);
+    color: var(--clr-article-title);
     text-decoration: none;
 }
 
