@@ -24,8 +24,8 @@
     --fs-h3: 1.15rem;
     --fs-tiny: 1rem;
     --fs-body: 1rem;
-    --bs-nhc: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    --bs-hc: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    --bs-nhc: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    --bs-hc: 0 8px 16px 0 rgba(2, 1, 1, 0.25);
 }
 
 
@@ -183,7 +183,6 @@ li {
     margin-top: .5em;
     margin-bottom: .5em;
     padding: .5em;
-    border-radius: ;
     box-shadow: var(--bs-nhc);
 }
 
@@ -194,6 +193,19 @@ li {
 .article-card-title {
     color: var(--clr-accent);
     padding-right: .5em;
+}
+
+.article-card-title a {
+    color: var(--clr-accent);
+    text-decoration: none;
+}
+
+.article-card-date {
+    color: var(--clr-med);
+}
+
+.article-card-rt {
+    padding: 1em;
 }
 
 .article-card-icon {
