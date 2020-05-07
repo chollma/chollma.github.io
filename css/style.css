@@ -23,7 +23,7 @@
     --fs-h1: 1.5rem;
     --fs-h2: 1.25rem;
     --fs-h3: 1.15rem;
-    --fs-tiny: 1rem;
+    --fs-tiny: .85rem;
     --fs-body: 1rem;
     --bs-nhc: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
     --bs-hc: 0 8px 16px 0 rgba(2, 1, 1, 0.25);
@@ -48,9 +48,7 @@ body {
 img {
     grid-column: 2;
     max-width: 100ch;
-    justify-self: center;
-    border-radius: 50%;
-    padding: 1em;
+    padding-top: 1em;
 }
 
 
@@ -161,13 +159,21 @@ li {
 
 .breadcrumbs {
     grid-column: 2;
-    align-items: center;
-    display: flex;
-    margin: 1em;
 }
 
-.seperator {
-    margin: 0 .75em;
+.breadcrumb-item {
+    grid-column: 2;
+    font-size: var(--fs-tiny);
+    color: var(--clr-med);
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: var(--clr-med);
+}
+
+.breadcrumb-item:hover {
+    text-decoration: underline;
 }
 
 
@@ -177,6 +183,20 @@ li {
     display: grid;
     grid-template-areas: "header header header" "navigation main ads" "footer footer footer";
     grid-template-columns: minmax(1.2rem, 1fr) minmax(auto, 85ch) minmax(1.2rem, 1fr);
+}
+
+.profile-img {
+    grid-column: 2;
+    max-width: 100ch;
+    justify-self: center;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.article-img {
+    grid-column: 2;
+    max-width: 100%;
+    justify-self: center;
 }
 
 .article-card {
@@ -257,6 +277,17 @@ li {
     font-weight: 100;
     border-radius: .25em;
     float: right;
+}
+
+.article-meta-data {
+    grid-column: 2;
+    padding-right: 1em;
+}
+
+.article-meta-data-item {
+    padding-right: 2em;
+    margin: 0;
+    color: var(--clr-med);
 }
 
 .about-me {
