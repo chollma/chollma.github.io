@@ -160,6 +160,7 @@ li {
 }
 
 .breadcrumbs {
+    grid-column: 2;
     align-items: center;
     display: flex;
     margin: 1em;
