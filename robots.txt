@@ -1,3 +1,5 @@
 #Robots.txt for cooperhollmaier.com
 
+disallow: /article*
+
 
