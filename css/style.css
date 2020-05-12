@@ -333,6 +333,20 @@ li {
     justify-self: center;
 }
 
+.reading-cards {
+    grid-column: 2;
+}
+
+.reading-card-item {
+    padding: 2em;
+    background-color: var(--clr-light);
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em;
+    border-radius: .25em;
+    box-shadow: var(--bs-nhc);
+}
+
 
 /* Footer */
 
