@@ -6,6 +6,7 @@
 
  :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-logo: 'Rajdhani', san-serif;
     --fw-reg: 300;
     --fw-bold: 600;
     --clr-light: #fff;
@@ -28,28 +29,21 @@
     --bs-hc: 0 8px 16px 0 rgba(2, 1, 1, 0.25);
 }
 
+
+/* Fonts */
+
 @font-face {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 300;
-    src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url('../fonts/source-sans-pro-v13-latin-ext_latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/source-sans-pro-v13-latin-ext_latin-300.woff') format('woff');
+    src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url('../fonts/source-sans-pro-v13-latin-ext_latin-300.woff2') format('woff2'), url('../fonts/source-sans-pro-v13-latin-ext_latin-300.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 600;
-    src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url('../fonts/source-sans-pro-v13-latin-ext_latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/source-sans-pro-v13-latin-ext_latin-600.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('../fonts/source-sans-pro-v13-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/source-sans-pro-v13-latin-ext_latin-700.woff') format('woff');
+    src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url('../fonts/source-sans-pro-v13-latin-ext_latin-600.woff2') format('woff2'), url('../fonts/source-sans-pro-v13-latin-ext_latin-600.woff') format('woff');
 }
 
 @font-face {
@@ -128,9 +122,7 @@ li {
 }
 
 .logo {
-    font-family: Rajdhani;
-    font-style: normal;
-    font-weight: normal;
+    font-family: var(--ff-logo);
     font-size: 36px;
     line-height: 46px;
     padding: 0;
