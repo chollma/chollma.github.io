@@ -6,10 +6,8 @@
 
  :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Russo One', monospace;
     --fw-reg: 300;
-    --fw-article-card: 600;
-    --fw-bold: 900;
+    --fw-bold: 600;
     --clr-light: #fff;
     --clr-med: #4C1A1A;
     --clr-dark: #303030;
@@ -30,32 +28,13 @@
     --bs-hc: 0 8px 16px 0 rgba(2, 1, 1, 0.25);
 }
 
-
-/* source-sans-pro-300 - latin-ext_latin */
-
 @font-face {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 300;
     src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url('../fonts/source-sans-pro-v13-latin-ext_latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/source-sans-pro-v13-latin-ext_latin-300.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
-
-/* source-sans-pro-regular - latin-ext_latin */
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url('../fonts/source-sans-pro-v13-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/source-sans-pro-v13-latin-ext_latin-regular.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-
-/* source-sans-pro-600 - latin-ext_latin */
 
 @font-face {
     font-family: 'Source Sans Pro';
@@ -63,11 +42,7 @@
     font-weight: 600;
     src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url('../fonts/source-sans-pro-v13-latin-ext_latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/source-sans-pro-v13-latin-ext_latin-600.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
-
-/* source-sans-pro-700 - latin-ext_latin */
 
 @font-face {
     font-family: 'Source Sans Pro';
@@ -75,11 +50,7 @@
     font-weight: 700;
     src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('../fonts/source-sans-pro-v13-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/source-sans-pro-v13-latin-ext_latin-700.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
-
-/* rajdhani-500 - latin */
 
 @font-face {
     font-family: 'Rajdhani';
@@ -87,7 +58,6 @@
     font-weight: 500;
     src: local('Rajdhani Medium'), local('Rajdhani-Medium'), url('../fonts/rajdhani-v9-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/rajdhani-v9-latin-500.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 
@@ -103,6 +73,7 @@ body {
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
+    font-weight: var(--fw-reg);
     line-height: 1.6;
 }
 
@@ -115,13 +86,10 @@ img {
 
 /* Typography */
 
-strong {
-    font-weight: var(--fw-bold);
-}
-
 h1,
 h2,
 h3 {
+    font-weight: var(--fw-bold);
     grid-column: 2;
     line-height: 1;
 }
