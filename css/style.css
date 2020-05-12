@@ -185,10 +185,27 @@ li {
 
 .profile-img {
     grid-column: 2;
-    max-width: 100ch;
+    max-width: 30%;
     justify-self: center;
     border-radius: 50%;
-    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: -.5em;
+    padding: .5em;
+}
+
+.home-title {
+    justify-self: center;
+}
+
+.home-subtitle {
+    justify-self: center;
+    margin: 0em;
+    font-weight: var(--fw-reg);
+    padding-bottom: 2em;
+}
+
+.home-subtitle-job {
+    color: #225c4e;
 }
 
 .article-card {
