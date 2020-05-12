@@ -11,7 +11,7 @@
     --fw-article-card: 600;
     --fw-bold: 900;
     --clr-light: #fff;
-    --clr-med: rgb(70, 26, 26);
+    --clr-med: #4C1A1A;
     --clr-dark: #303030;
     --clr-accent: #5CE1FF;
     --clr-article-title: #555;
@@ -19,6 +19,8 @@
     --clr-topic-env: #52796F;
     --clr-topic-edu: #1F739D;
     --clr-topic-comm: #8A3222;
+    --clr-twitter: #1DA1F2;
+    --clr-facebook: #3977f2;
     --fs-h1: 1.5rem;
     --fs-h2: 1.25rem;
     --fs-h3: 1.15rem;
@@ -93,9 +95,6 @@ li {
     padding: 10px 16px;
     background: var(--clr-header);
     color: var(--clr-med);
-}
-
-.sticky {
     position: sticky;
     top: 0;
 }
@@ -127,11 +126,11 @@ li {
 }
 
 .logo-twitter {
-    color: #1DA1F2;
+    color: var(--clr-twitter);
 }
 
 .logo-facebook {
-    color: #3977f2;
+    color: var(--clr-facebook);
 }
 
 .nav-list {
@@ -153,25 +152,6 @@ li {
 
 .nav-list-items:hover {
     opacity: .7;
-}
-
-.breadcrumbs {
-    grid-column: 2;
-}
-
-.breadcrumb-item {
-    grid-column: 2;
-    font-size: var(--fs-tiny);
-    color: var(--clr-med);
-}
-
-.breadcrumb-item a {
-    text-decoration: none;
-    color: var(--clr-med);
-}
-
-.breadcrumb-item:hover {
-    text-decoration: underline;
 }
 
 
