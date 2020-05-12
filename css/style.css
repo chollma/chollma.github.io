@@ -7,12 +7,11 @@
  :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Russo One', monospace;
-    --ff-logo: 'Russo One', monospace;
     --fw-reg: 300;
     --fw-article-card: 600;
     --fw-bold: 900;
     --clr-light: #fff;
-    --clr-med: rgb(139, 139, 139);
+    --clr-med: rgb(70, 26, 26);
     --clr-dark: #303030;
     --clr-accent: #5CE1FF;
     --clr-article-title: #555;
@@ -50,15 +49,6 @@ img {
     max-width: 100ch;
     padding-top: 1em;
 }
-
-
-/* Media Queries */
-
-@media (min-width: 480px) {}
-
-@media (min-width: 800px) {}
-
-@media (min-width: 1100px) {}
 
 
 /* Typography */
