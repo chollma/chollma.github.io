@@ -10,7 +10,7 @@
     --fw-med: 500;
     --fw-bold: 600;
     --clr-light: #fff;
-    --clr-med: #4C1A1A;
+    --clr-med: #838181;
     --clr-dark: #303030;
     --clr-accent: #5CE1FF;
     --clr-article-title: #555;
@@ -183,10 +183,11 @@ hr {
     margin: 0em;
     font-weight: var(--fw-reg);
     padding-bottom: 2em;
+    color: var(--clr-med);
 }
 
 .home-subtitle-job {
-    color: #225c4e;
+    color: var(--clr-topic-env);
     font-weight: var(--fw-med);
 }
 
