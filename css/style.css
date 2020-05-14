@@ -12,10 +12,7 @@
     --clr-light: #fff;
     --clr-med: #838181;
     --clr-dark: #303030;
-    --clr-accent: #5CE1FF;
-    --clr-article-title: #555;
-    --clr-header: #555;
-    --clr-topic-env: #52796F;
+    --clr-accent: #52796F;
     --clr-topic-edu: #1F739D;
     --clr-topic-comm: #8A3222;
     --clr-twitter: #1DA1F2;
@@ -142,7 +139,7 @@ hr {
 
 .nav-list-items a {
     text-decoration: none;
-    color: var(--clr-topic-env);
+    color: var(--clr-accent);
 }
 
 .nav-list-items:hover {
@@ -150,7 +147,7 @@ hr {
 }
 
 .link-blog a {
-    background-color: var(--clr-topic-env);
+    background-color: var(--clr-accent);
     color: var(--clr-light);
     padding: .5em;
 }
@@ -187,7 +184,7 @@ hr {
 }
 
 .home-subtitle-job {
-    color: var(--clr-topic-env);
+    color: var(--clr-accent);
     font-weight: var(--fw-med);
 }
 
@@ -205,7 +202,7 @@ hr {
 }
 
 .article-card-title {
-    color: var(--clr-article-title);
+    color: var(--clr-dark);
     padding-right: .5em;
 }
 
@@ -223,11 +220,11 @@ hr {
 }
 
 .article-card-icon {
-    color: var(--clr-header);
+    color: var(-clr-dark);
 }
 
 .article-card-topic {
-    background-color: var(--clr-header);
+    background-color: var(--clr-dark);
     padding: .125em;
     color: var(--clr-light);
     font-weight: 100;
@@ -236,7 +233,7 @@ hr {
 }
 
 .article-card-topic-seo {
-    background-color: var(--clr-header);
+    background-color: var(--clr-dark);
     padding: .125em;
     color: var(--clr-light);
     font-weight: 100;
@@ -245,7 +242,7 @@ hr {
 }
 
 .article-card-topic-env {
-    background-color: var(--clr-topic-env);
+    background-color: var(--clr-accent);
     padding: .125em;
     color: var(--clr-light);
     font-weight: 100;
