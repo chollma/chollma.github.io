@@ -195,7 +195,20 @@ hr {
     margin-bottom: .5em;
     padding: .5em;
     box-shadow: var(--bs-nhc);
+    
 }
+
+.adventure-card {
+    grid-column: 2;
+    background-color: var(--clr-light);
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em;
+    box-shadow: var(--bs-nhc);
+  
+}
+
+
 
 .article-card:hover {
     box-shadow: var(--bs-hc);
