@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -20,8 +21,8 @@
     --fs-h1: 1.5rem;
     --fs-h2: 1.25rem;
     --fs-h3: 1.15rem;
-    --fs-tiny: .85rem;
     --fs-body: 1rem;
+    --fs-tiny: .85rem;
     --bs-nhc: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
     --bs-hc: 0 8px 16px 0 rgba(2, 1, 1, 0.25);
 }
@@ -58,6 +59,7 @@ body {
     font-size: var(--fs-body);
     font-weight: var(--fw-reg);
     line-height: 1.6;
+    text-rendering: optimizeLegibility;
 }
 
 img {
@@ -99,11 +101,13 @@ li {
     margin: 1;
 }
 
-hr {
-    grid-column: 2;
-    color: var(--clr-dark);
+strong {
+    font-weight: var(--fw-bold);
 }
 
+a {
+    color:var(--clr-facebook);
+}
 
 /* Navigation */
 
