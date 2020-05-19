@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -106,8 +105,9 @@ strong {
 }
 
 a {
-    color:var(--clr-facebook);
+    color: var(--clr-facebook);
 }
+
 
 /* Navigation */
 
@@ -199,7 +199,6 @@ a {
     margin-bottom: .5em;
     padding: .5em;
     box-shadow: var(--bs-nhc);
-    
 }
 
 .adventure-card {
@@ -209,10 +208,7 @@ a {
     margin-bottom: .5em;
     padding: .5em;
     box-shadow: var(--bs-nhc);
-  
 }
-
-
 
 .article-card:hover {
     box-shadow: var(--bs-hc);
@@ -395,3 +391,16 @@ a {
     padding: .5em;
 }
 
+.rq-container {
+    grid-column: 2;
+    box-shadow: var(--bs-nhc);
+    padding: 1em;
+}
+
+.rq-source {
+    padding-right: .25em;
+}
+
+.rq-citation {
+    padding: 1em;
+}
