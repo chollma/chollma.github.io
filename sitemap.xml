@@ -9,14 +9,20 @@
   </url> 
     <url>
     <loc>https://cooperhollmaier.com/speaking</loc>
-    
+    <lastmod>2020-05-20T12:05:00-07:00</lastmod>
+
   </url> 
   <url>
     <loc>https://cooperhollmaier.com/thoughts</loc>
-    
+    <lastmod>2020-05-20T12:05:00-07:00</lastmod>
   </url> 
   <url>
-    <loc>https://cooperhollmaier.com/adventures</loc>
-    
+    <loc>https://cooperhollmaier.com/code</loc>
+    <lastmod>2020-05-20T12:05:00-07:00</lastmod>
   </url> 
+<url>
+    <loc>  https://cooperhollmaier.com/code/random-quote</loc>
+    <lastmod>2020-05-20T12:05:00-07:00</lastmod>
+  </url> 
+
 </urlset> 
