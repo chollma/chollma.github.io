@@ -21,13 +21,13 @@ var quotes = [
 
 // Pre-selected list that contains the colors of the rainbow as strings of text
 var colors = [
-    { color: 'red' },
-    { color: 'orange' },
-    { color: 'yellow' },
-    { color: 'green' },
-    { color: 'indigo' },
-    { color: 'blue' },
-    { color: 'purple' }
+    { color: '#838181' },
+    { color: '#303030' },
+    { color: '#405E58' },
+    { color: '#1F739D' },
+    { color: '#8A3222' },
+    { color: '#1DA1F2' },
+    { color: '#3977f2' }
 ]
 
 // Generation of a random number to serve as the index for accessing the object above. Output should be a singular item object in the array.
@@ -52,9 +52,9 @@ setInterval(function printQuote() {
     outputHTML += '<p class="source">' + responseQuote.source;
 
     if (responseQuote.citation) {
-        outputHTML += '<span class="citation">' + responseQuote.citation + '</span>';
+        outputHTML += ' <span class="citation">' + responseQuote.citation + '</span>';
     }
     outputHTML += '</p>';
     document.getElementById('rq-quote-box').innerHTML = outputHTML;
-    document.body.querySelector('p').style.color = responseColor;
+    document.querySelector('div').style.boxShadow = '0 4px 8px 0 ' + responseColor;
 }, 10000);
