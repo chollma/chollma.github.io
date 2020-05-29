@@ -413,3 +413,17 @@
                               .rq-citation {
                                   padding: 1em;
                               }
+                              
+                              .book-list-item {
+                                  list-style: none;
+                              }
+                              
+                              .book-list-item-details {}
+                              
+                              .book-list-item-details .book-list-img {
+                                  width: 2.5em;
+                                  float: left;
+                                  height: auto;
+                                  margin-right: 1em;
+                                  padding-top: .125em;
+                              }
