@@ -58,5 +58,5 @@ function addPagination(list) {
 
 }
 
-showPage(list, 1);
+showPage(display, 1);
 addPagination(display);
