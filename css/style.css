@@ -427,3 +427,23 @@
                                   margin-right: 1em;
                                   padding-top: .125em;
                               }
+
+                              .pagination {
+                                  text-align:center;
+                                  margin: 2em ;
+                                  
+
+                              }
+
+                              .pagination li {
+                                  display: inline;
+                                  padding: .125em;
+                              }
+
+                              .pagination li a {
+                                  border-radius: .125em;
+                                  padding: .125em 1em;
+                                  text-decoration: none;
+                                  background-color: var(--clr-accent);
+                                  color: var(--clr-light);
+                              }
