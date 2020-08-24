@@ -162,6 +162,7 @@
                               .button-home-link {
                                   grid-column: 2;
                                   text-align: center;
+                                 
                               }
                               
                               .button-home {
@@ -169,6 +170,7 @@
                                   background-color: var(--clr-accent);
                                   color: var(--clr-light);
                                   padding: 1em;
+                                  width: 100%;
                               }
                               /* Content */
                               
