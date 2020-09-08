@@ -309,6 +309,14 @@
                                   margin: 0;
                                   color: var(--clr-med);
                               }
+
+                              .article-table-of-contents{
+                                  grid-column:2;
+                                  padding-right: 1em;
+                                  padding-top: 1em;
+                                  
+                                  
+                              }
                               
                               .article-share {
                                   grid-column: 2;
@@ -407,53 +415,7 @@
                                   padding: .5em;
                               }
                               
-                              .rq-container {
-                                  grid-column: 2;
-                                  box-shadow: var(--bs-nhc);
-                                  padding: 1em;
-                              }
-                              
-                              .rq-source {
-                                  padding-right: .25em;
-                              }
-                              
-                              .rq-citation {
-                                  padding: 1em;
-                              }
-                              
-                              .book-list-item {
-                                  list-style: none;
-                              }
-                              
-                              .book-list-item-details {}
-                              
-                              .book-list-item-details .book-list-img {
-                                  width: 2.5em;
-                                  float: left;
-                                  height: auto;
-                                  margin-right: 1em;
-                                  padding-top: .125em;
-                              }
-
-                              .pagination {
-                                  text-align:center;
-                                  margin: 2em ;
-                                  
-
-                              }
-
-                              .pagination li {
-                                  display: inline;
-                                  padding: .125em;
-                              }
-
-                              .pagination li a {
-                                  border-radius: .125em;
-                                  padding: .125em 1em;
-                                  text-decoration: none;
-                                  background-color: var(--clr-accent);
-                                  color: var(--clr-light);
-                              }
+                             
 
                            
                             

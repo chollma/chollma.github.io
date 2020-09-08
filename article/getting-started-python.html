@@ -56,12 +56,23 @@
             <span class="article-meta-data-item">|</span>
             <span class="article-meta-data-item">May 6, 2020, 11:49am PST</span>
         </div>
-        <p><strong>Table of Contents</strong></p>
-        <ul>
-            <li>Installing Python</li>
-            <li>The Moving Parts</li>
-            <li>Key Principles</li>
-        </ul>
+        <div class="article-table-of-contents">
+        <strong>Table of Contents</strong>
+        <ol>
+            <li>
+                Introduction
+            </li>
+            <li>
+                Installing Python
+            </li>
+            <li>
+                The Moving Parts
+            </li>
+            <li>
+                Code We're Going to Use
+            </li>
+        </ol>
+        </div>
         <p>Whether you're a software engineer, data scientist, or just someone who wants to make tediuous tasks easy, Python might be the programming language you've been dreaming of. I recently started investigating the language and I have to say that I'm impressed. It's remarkably easy to get rolling (especially if you're on a Mac) and I was amazed by all the things I could use Python to do.</p>
         <p>In the article to follow, we'll walk through setting up Python on your machine, the problem I solved for my own workflow by building a program to parse HTML, and some helpful reading if you want to take your learning a step further.</p>
         <p>Before we get started, I want to note that Python and the program we'll build can make it very easy to extract content from a webpage (which was my goal). I recommend parsing code that you own or have express permission to access. Don't go violating terms of service agreements or stealing the property of others. Be a good citizen of the web.</p>
@@ -80,15 +91,26 @@
         <p>The file editor contains all the code that you'll need to run your complete program. It will include a detailed list of instructions that you'll be giving to the computer to run with but it's not interactive like the interactive shell. Anything you write in the file editor must be saved and then run.</p>
         <h2>The Key Principles</h2>
         <h3>Dictionaries</h3>
+        <p>These work similar in Python to how they did in your highschool english class. A dictionary in Python is a data structure that contains an unordered list of values. We can access the data in this dictionary by referring to it's "key". In the program we're building, we'll build a dictionary to select specific elements in the HTML. I will admit, this wasn't my first approach to the code, but I went back and found that using a dictionary drastically cut down on the code I had to repeat. </p>
         <h3>Else if statements</h3>
+        <p>Abbreviated as elif in our code, these statements allow us to test if a condition is true or false when there are multiple potential cases possible. We'll use these heavily in our example to follow.</p>
         <h3>If statements</h3>
+        <p>We use if statements to decide whether to run a block of code or skip over it.</p>
         <h3>Import()</h3>
+        <p>Sometimes someone has already developed an elegant solution to a problem so we don't have to. We use the import statement at the begining of a program to add additional functionality that we want to use later in the program.</p>
         <h3>Input()</h3>
+        <p>This function prompts the user for keyword input.</p>
         <h3>Len()</h3>
+        <p>This function returns the number of items in the object it's called on.</p>
         <h3>Libraries</h3>
+        <p>Libraries are common in any programming language. These are reusable snippets of code that we'll use to perform complex actions. Other developers have built out useful functionality that is has many uses and can be applied to different problems.</p>
         <h3>Lower()</h3>
+        <p>This method returns a lowercased string</p>
         <h3>Print()</h3>
+        <p>This method is used for printing data or a message to the screen. When we use this method in our program, it'll display our text in the interactive shell.</p>
         <h3>Str()</h3>
+        <p>This method returns a string of the contained object.</p>
+        
     </article>
     
     <!--Footer-->
