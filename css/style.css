@@ -64,6 +64,20 @@
                                   max-width: 100ch;
                                   padding-top: 1em;
                               }
+
+                              .gist {
+                                  display:grid;
+                                  grid-column: 2;
+                                  max-width: 100ch;
+                                  width: 100ch;
+                              }
+                              .gist-file,
+                              .gist-data {
+                                  max-height: 25em;
+                                  max-width: 1ch;
+                              }
+
+                              
                               /* Typography */
                               
                               h1,
