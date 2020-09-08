@@ -280,6 +280,15 @@
                                   border-radius: .25em;
                                   float: right;
                               }
+
+                              .article-card-topic-python {
+                                background-color: #3776ab;
+                                padding: .125em;
+                                color: var(--clr-light);
+                                font-weight: 300;
+                                border-radius: .25em;
+                                float: right;
+                            }
                               
                               .article-card-topic-edu {
                                   background-color: var(--clr-topic-edu);
