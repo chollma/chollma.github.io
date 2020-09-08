@@ -311,7 +311,7 @@
                               }
 
                               .article-table-of-contents{
-                                  grid-column:2;
+                                  grid-column:4;
                                   padding-right: 1em;
                                   padding-top: 1em;
                                   
