@@ -19,7 +19,7 @@
                                   --clr-facebook: #3977f2;
                                   --fs-h1: 1.5rem;
                                   --fs-h2: 1.25rem;
-                                  --fs-h3: 1.15rem;
+                                  --fs-h3: 1.025rem;
                                   --fs-body: 1rem;
                                   --fs-tiny: .85rem;
                                   --bs-nhc: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
@@ -79,10 +79,17 @@
                                   font-weight: var(--fw-bold);
                                   grid-column: 2;
                                   line-height: 1;
+                                  
                               }
                               
                               h1 {
                                   font-size: var(--fs-h1);
+                              }
+
+                              h2 {
+                                  margin-bottom: 0;
+                                  
+                                  font-size: var(--fs-h2);
                               }
                               
                               .error-title {
@@ -94,9 +101,7 @@
                                   text-align: center;
                               }
                               
-                              h2 {
-                                  font-size: var(--fs-h2);
-                              }
+                              
                               
                               h3 {
                                   font-size: var(--fs-h3);
@@ -104,6 +109,7 @@
                               
                               p {
                                   grid-column: 2;
+                                  margin-bottom: .5em;
                               }
                               
                               ul,
