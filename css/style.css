@@ -66,6 +66,8 @@
                               }
 
                               
+
+                              
                               /* Typography */
                               
                               h1,
@@ -183,6 +185,10 @@
                                   display: grid;
                                   grid-template-areas: "header header header" "navigation main ads" "footer footer footer";
                                   grid-template-columns: minmax(1.2rem, 1fr) minmax(auto, 85ch) minmax(1.2rem, 1fr);
+                              }
+
+                              section {
+                                  grid-column: 2;
                               }
                               
                               .profile-img {
@@ -351,7 +357,30 @@
                                   padding-right: .75em;
                                   font-size: var(--fs-tiny);
                               }
-                              
+                              .toc {
+                                  grid-column: 2;
+                                  padding-left: .5em;
+                                  padding-top: 1em;
+                                  padding-bottom: 1em;
+                                  position: -webkit-sticky; 
+                                  position: sticky;
+                                  top: 0;
+                                  background: var(--clr-accent);
+                                  color: var(--clr-light);
+
+                              }
+                              .toc-item {
+                                  padding-right:.5em;
+                                  font-size: var(--fs-tiny);
+                              }
+
+                              .toc-item a {
+                                  text-decoration: none;
+                                  color: var(--clr-light);
+                              }
+                              .toc-item a:hover {
+                                  opacity: .7;
+                              }
                               .article-headline {
                                   grid-column: 2;
                                   font-size: var(--fs-h3);
