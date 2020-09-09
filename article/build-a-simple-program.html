@@ -7,25 +7,25 @@
     <meta name=viewport content="width=device-width,initial-scale=1">
     <meta name="robots" content="noindex">
     <!-- Page Info -->
-    <title>Getting Started with Python | Cooper Hollmaier</title>
-    <meta name="description" content="Learn how to get Python installed on your machine and build a small program to check your own code." />
+    <title>Build a Simple Program | Cooper Hollmaier</title>
+    <meta name="description" content="Build a simple program to parse through HTML and provide instant feedback." />
     <!--Social-->
     <meta name="author" content="Cooper Hollmaier">
     <meta name="twitter:creator" content="@cooperhollmaier">
-    <meta name="twitter:url" content="https://cooperhollmaier.com/article/getting-started-python">
-    <meta name="twitter:description" content="Learn how to get Python installed on your machine and build a small program to check your own code.">
+    <meta name="twitter:url" content="https://cooperhollmaier.com/article/build-a-simple-program">
+    <meta name="twitter:description" content="Build a simple program to parse through HTML and provide instant feedback.">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@cooperhollmaier">
-    <meta name="twitter:image" content="https://cooperhollmaier.com/img/python-hero.jpg">
-    <meta name="twitter:image:src" content="https://cooperhollmaier.com/img/python-hero.jpg">
-    <meta name="twitter:title" content="Getting Started with Python | Cooper Hollmaier">
-    <meta name="og:title" content="Getting Started with Python | Cooper Hollmaier">
-    <meta name="og:description" content="Learn how to get Python installed on your machine and build a small program to check your own code.">
-    <meta name="og:image" content="https://cooperhollmaier.com/img/python-hero.jpg">
+    <meta name="twitter:image" content="https://cooperhollmaier.com/img/cooper.jpeg">
+    <meta name="twitter:image:src" content="https://cooperhollmaier.com/img/cooper.jpeg">
+    <meta name="twitter:title" content="Build a Simple Program | Cooper Hollmaier">
+    <meta name="og:title" content="Build a Simple Program | Cooper Hollmaier">
+    <meta name="og:description" content="Build a simple program to parse through HTML and provide instant feedback.">
+    <meta name="og:image" content="https://cooperhollmaier.com/img/cooper.jpeg">
     <meta name="og:site_name" content="Cooper Hollmaier">
     <meta name="og:locale" content="en_US">
     <!--Links -->
-    <link rel="canonical" href="https://cooperhollmaier.com/article/getting-started-python" />
+    <link rel="canonical" href="https://cooperhollmaier.com/article/build-a-simple-program" />
     <link rel="stylesheet" href="../css/style.css ">
     <!--Icons-->
     <link rel="icon " type="image/jpeg " href="img/favicon.jpeg">
@@ -48,7 +48,7 @@
             <span class="article-topic-item">Education</span>
         </div>
         <div class="article-headline">
-            <h1>Getting Started with Python</h1>
+            <h1>Build a Simple Program</h1>
         </div>
         <div class="article-meta-data">
             <span class="article-meta-data-item">By <a style="text-decoration:none;"href="https://twitter.com/cooperhollmaier" aria-label="Go to Cooper Hollmaier's twitter profile page">Cooper Hollmaier</a></span>
@@ -57,63 +57,7 @@
         </div>
         <img class="article-hero" src="https://cooperhollmaier.com/img/python-hero.jpg">
         <figcaption style="grid-column:2;font-size:.6rem;">Photo by Hitesh Choudhary</figcaption>
-        <p>Whether you're a software engineer, data scientist, or just someone who wants to make tediuous tasks easy, Python might be the programming language you've been dreaming of. I recently started investigating the language and I have to say that I'm impressed. It's remarkably easy to get rolling (especially if you're on a Mac) and I was amazed by all the things I could use Python to do.</p>
-        <p>In the article to follow, we'll walk through setting up Python on your machine, the problem I solved for my own workflow by building a program to parse HTML, and some helpful reading if you want to take your learning a step further.</p>
-        <p><strong>Note: </strong>the program we are about to build can make it very easy to extract content from a webpage. It is important that we are "good citizens of the web" and parse only information that we own or have permission to access.</p>
-        <p>Now that we've got the ethics out of the way, let's help access Python and all the goodness it has to offer.</p>
-
-        <h2>Installing Python</h2>
-        <p>Before we start writing code, it is important to pick a good text editor. This tutorial will make use of the out-of-the-box file editor that Python gives us, but there's a ton of other great options such as <a aria-label="Go to PyCharm download page" href="https://www.jetbrains.com/pycharm/download">PyCharm</a> or <a aria-label="Go to Visual Studio download page" href="https://code.visualstudio.com/Download">Visual Studio Code</a></p>
-        <p>One of the reasons I have loved working in Python is because of how easy it is for someone who has never coded before to get set-up for the first time.</p>
-        <p><strong>If you're on a Mac:</strong><br> Browse to the <a href="https://www.python.org/downloads/mac-osx/">Mac OS X downloads section</a> and find the most recent stable release (at the time of this writing, we're on version 3.7.9). You'll want the "macOS 64-bit installer".</p>
-        <p><strong>If you're on a PC:</strong><br>  Browse to the <a href="https://www.python.org/downloads/windows/">Windows downloads section</a> and find the latest stable release of Python. You'll want the "x86 Executable Installer".</p>
-        <p><strong>If you're running some different operating system:</strong> <br>Don't worry. There's a <a href="https://www.python.org/download/other/">downloads section</a> for you too.</p>
-        <h2>The Moving Parts</h2>
-        <p>The software you've just installed on your computer is what's called an Integrated Development Environment or IDE. This is a set of tools that make a developer's job easier. In our case, the Python IDE comes with 2 different tools - an interactive shell and a file editor. We'll be using both to build our HTML parser.  </p>
-        <h3>The Integrated Development Environment</h3>
-        <h4>The Interactive Shell</h4>
-        <p>Think of this kind of like a calculator. You can punch stuff in and get back a response quickly. The interactive shell will allow you to run code that you write, 1 item at a time. This shell is also where you'll be able to see the outputs from the program that we'll be building.</p>
-        <script src="https://gist.github.com/chollma/e88b782563ac43477bda60e94a12ee89.js"></script>
-        <h4>The File Editor</h4>
-        <p>The file editor is a tool you can use to create entire programs for the Python Shell to run. We will use the file editor to build our HTML parser so that we can save our file and run it versus entering our instructions line-by-line. You can create a new program by selecting "File" and then "New File"</p>
-        <h2>The Key Principles</h2>
-        <p>Every programming language has a set of words, phrases, and symbols that go together to create a "syntax". This is how a computer can process the things we give them and return our desired result. One of the best things about Python is that it's syntax is pretty simple. We won't need to end each line of code with a semi-colon or a closing bracket like other langauages.</p>
-        <p>That said, there are still alot of things we can do with Python. The list below will give you a rundown of the pieces of syntax we'll be using to construct our program, but I'd recommend still reviewing the <a href="https://docs.python.org/3/reference/index.html">Python Language Reference</a> which contains a full list of possibilities.</p>
-        <h3>Syntax to Know</h3>
-        <h4>Dictionaries</h4>
-        <p>When we are working with large amounts of data, we need a container to store things in. We also need a way to locate and access the indivudal items later.</p>
-        <p>Dictionaries in Python work similar to how they did in your highschool english class. A dictionary is a data structure that contains an unordered list of values. We can access the data in this dictionary by referring to it's "key". </p>
-        <script src="https://gist.github.com/chollma/0b019313efe53b7333566b167e104c3d.js"></script>
-        <h4>Else if statements</h4>
-        <p>Abbreviated as elif in our code, these statements allow us to test if a condition is true or false when there are multiple potential cases possible. We'll use these heavily in our example to follow.</p>
-        <script src="https://gist.github.com/chollma/e5b35a9a439a1443399ab6480845e6fc.js"></script>
-        <h4>If statements</h4>
-        <p>We use if statements to decide whether to run a block of code or skip over it.</p>
-        <script src="https://gist.github.com/chollma/c7936234a2ab061b1408e62370121228.js"></script>
-        <h4>Import()</h4>
-        <p>Sometimes someone has already developed an elegant solution to a problem so we don't have to. We use the import statement at the begining of a program to add additional functionality that we want to use later in the program.</p>
-        <script src="https://gist.github.com/chollma/b6076ca9c2169d66f8fe329973bdae3f.js"></script>
-        <h4>Input()</h4>
-        <p>This function prompts the user for keyword input.</p>
-        <script src="https://gist.github.com/chollma/3c6dbba334a733728ba55c25a68a56a7.js"></script>
-        <h4>Len()</h4>
-        <p>This function returns the number of items in the object it's called on.</p>
-        <script src="https://gist.github.com/chollma/3483197ab978555194a24d2fc9fa3d3d.js"></script>
-        <h4>Libraries</h4>
-        <p>Libraries are common in any programming language. These are reusable snippets of code that we'll use to perform complex actions. Other developers have built out useful functionality that is has many uses and can be applied to different problems.</p>
-        <p>We'll use two different libraries in our program: <a href="https://requests.readthedocs.io/en/master/">Requests</a> and <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a></p>
-        <h4>Lower()</h4>
-        <p>This method returns a lowercased string</p>
-        <script src="https://gist.github.com/chollma/f3a47ad904759db681888b68f651939c.js"></script>
-        <h4>Print()</h4>
-        <p>This method is used for printing data or a message to the screen. When we use this method in our program, it'll display our text in the interactive shell.</p>
-        <script src="https://gist.github.com/chollma/9c9ec2bc64f048836e56404b3ea9d094.js"></script>
-        <h4>Str()</h4>
-        <p>This method returns a string of the contained object.</p>
-        <script src="https://gist.github.com/chollma/e29c230f3cace7ef792b209f874326be.js"></script>
-        <h2>Doing Something Useful</h2>
-        <p>Now that you've completed the steps above to get the Python IDE installed on your machine, and you're familiar with some of the moving parts, let's use the methods, functions, and libraries we've learned about to build something useful that will help you in your everyday job.</p>
-        <p>Let's <a href="https://cooperhollmaier.com/article/build-a-simple-program">build a tool</a> to request a webpage and determined if the data returned to us meets a set of requirements we set.</p>
+        
     </article>
     
     <!--Footer-->
@@ -146,7 +90,7 @@
             "@type": "WebPage",
             "@id": "https://google.com/article"
           },
-          "headline": "Getting Started with Python",
+          "headline": "Build a Simple Program",
           "image": [],
           "datePublished": "2015-02-05T08:00:00+08:00",
           "dateModified": "2015-02-05T09:20:00+08:00",
