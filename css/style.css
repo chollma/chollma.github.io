@@ -337,6 +337,7 @@ section {
     float: right;
     vertical-align: middle;
     overflow: hidden;
+    max-height: 6.75em;
 }
 
 
