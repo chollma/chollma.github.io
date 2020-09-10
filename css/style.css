@@ -215,19 +215,17 @@ section {
 .article-card {
     grid-column: 2;
     background-color: var(--clr-light);
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
     padding: .5em;
-    box-shadow: var(--bs-nhc);
-}
-
-.article-card:hover {
-    box-shadow: var(--bs-hc);
+    height: 7.25rem;
+    border-top: 1px solid var(--clr-med);
 }
 
 .article-card-title {
     color: var(--clr-dark);
     padding-right: .5em;
+    padding-bottom: .75em;
 }
 
 .article-card-title a {
