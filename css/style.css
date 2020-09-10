@@ -336,6 +336,7 @@ section {
     max-width: 15ch;
     float: right;
     vertical-align: middle;
+    overflow: hidden;
 }
 
 
