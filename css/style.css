@@ -157,6 +157,13 @@ h3 {
     background-color: var(--clr-accent);
     color: var(--clr-light);
     padding: .5em;
+    position: relative;
+}
+
+.link-blog {
+    height: 3em;
+    background-color: var(--clr-accent);
+    position: relative;
 }
 
 .button-home-link {
@@ -321,6 +328,14 @@ section {
     grid-column: 2;
     max-width: 100%;
     justify-self: center;
+}
+
+.article-teaser {
+    position: relative;
+    display: inline-block;
+    max-width: 15ch;
+    float: right;
+    vertical-align: middle;
 }
 
 
