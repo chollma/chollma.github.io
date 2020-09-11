@@ -291,6 +291,8 @@ section {
 .article-meta-data {
     grid-column: 2;
     padding-right: 1em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid var(--clr-med);
 }
 
 .article-meta-data-item {
@@ -338,6 +340,13 @@ section {
     vertical-align: middle;
     overflow: hidden;
     max-height: 6.75em;
+}
+
+.article-note {
+    background: #d6d6d6;
+    border-left: 1em solid var(--clr-dark);
+    margin: 0;
+    padding: 0.5em;
 }
 
 
