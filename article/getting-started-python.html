@@ -58,8 +58,8 @@
         </div>
         <!--<img class="article-hero" src="https://cooperhollmaier.com/img/python-hero.jpg">-->
         <!--<figcaption style="grid-column:2;font-size:.6rem;">Photo by Hitesh Choudhary</figcaption>-->
-        <p>Whether you're a software engineer, data scientist, or just someone who wants to make tediuous tasks easy, Python might be the programming language you've been dreaming of. I recently started playing around with Python and I have to say that I'm
-            impressed. It's easy to get rolling (especially if you're on a Mac) and I am amazed by all the things Python can help me do.</p>
+        <p>Whether you're a software engineer, data scientist, or someone who wants to make tedious tasks easy, <a href="https://www.python.org/">Python</a> might be the programming language you've been dreaming of. I recently started playing around with
+            Python and I have to say that I'm impressed. It's easy to get rolling (especially if you're on a Mac) and I am amazed by all the things Python can help me do.</p>
         <p>In the paragraphs to follow, we'll walk through setting up the Python Integrated Development Environment (IDE) on your computer, what the IDE offers us as new developers, and introduce some programming lingo you will need to be familiar with.</p>
         <p><strong>Note: </strong>the <a href="https://cooperhollmaier.com/article/build-a-simple-program">simple program</a> we'll build in the next article can make it very easy to extract content from a webpage. It is important to be "good citizens of
             the web" and parse only information that we own or have permission to access.</p>
@@ -74,12 +74,13 @@
         <p><strong>If you're on a Mac:</strong><br> Check out the <a href="https://www.python.org/downloads/mac-osx/">Mac OS X downloads section</a>. You'll want to download the most current version of Python. At the time of this writing, we're on version
             3.7.9. The type of download you are looking for is the "macOS 64-bit installer".</p>
         <p><strong>If you're on a PC:</strong><br> Check out the <a href="https://www.python.org/downloads/windows/">Windows downloads section</a>. The file you want to download is the "x86 executable installer"</p>
-        <p><strong>If you're running some different operating system:</strong> <br>Don't worry. There's a <a href="https://www.python.org/download/other/">downloads section</a> for you too.</p>
+        <p><strong>If you're running a different operating system:</strong> <br>Don't worry. There's a <a href="https://www.python.org/download/other/">downloads section</a> for you too.</p>
         <p>Once you've downloaded the latest version of Python for your system, open and run the file. The installer should walk you through all the steps to get Python running on your computer.</p>
         <h2>The Moving Parts</h2>
         <p>The software you've installed on your computer is what's called an Integrated Development Environment or IDE. This is a set of tools that make a developer's job easier. In our case, the Python IDE comes with 2 different tools - an interactive
             shell and a file editor. We'll be using both to build program in the next article. </p>
         <h3>The Integrated Development Environment</h3>
+        <p></p>
         <h4>The Interactive Shell</h4>
         <p>Think of this kind of like a calculator. You can punch stuff in and get back a response. The interactive shell will allow you to run code that you write, 1 item at a time. This shell is also where you'll be able to see the outputs from the program
             that we'll be building.</p>
@@ -87,23 +88,26 @@
         <p>The shell is great for doing simple operations but likely the work you're hoping to make easier is a little more complex. For most applications of Python, we'll use the file editor. This way, we can write out long instructions once and let the
             shell do the heavy lifting for us.</p>
         <h4>The File Editor</h4>
-        <p>The file editor is a tool you can use to create entire programs for the Python Shell to run. We will use the file editor to build our HTML parser so that we can save our file and run it versus entering our instructions line-by-line. You can create
-            a new program by selecting "File" and then "New File"</p>
+        <p>A file editor is a tool we can use to create entire programs for the Python Shell to run. We will use the file editor to build our program so that we can save our file and run it versus entering our instructions line-by-line. You can create a
+            new program by selecting "File" and then "New File"</p>
         <h2>The Key Principles</h2>
-        <p>Now that we have a fresh blank file in front of us, it's time to start putting our ideas on paper. Before we do that, though, we'll want to understand some of the building blocks available to us in Python.</p>
+        <p>Now that we have a blank file in front of us, it's time to start putting our ideas on paper. Before we do that, though, we'll want to understand some of the building blocks available to us in Python.</p>
         <p>Every programming language has a set of words, phrases, and symbols that go together to create a "syntax". This is how a computer can process the things we give them and return our desired result. One of the best things about Python is that it's
-            syntax is pretty simple. We won't need to end each line of code with a semi-colon or a closing bracket like other langauages.</p>
-        <p>The list below will give you a rundown of the pieces of syntax we'll be using to construct our program, but I'd recommend still reviewing the <a href="https://docs.python.org/3/reference/index.html">Python Language Reference</a> which contains
-            a full list of possibilities.</p>
+            syntax is pretty simple. We won't need to end each line of code with a semi-colon or a closing bracket like other languages.</p>
+        <p>
+            I've listed the terms below you should know to build the program in the next article, but I'd recommend still reviewing the <a href="https://docs.python.org/3/reference/index.html">Python Language Reference</a> which contains a full list of
+            terms.
+        </p>
         <h3>Syntax to Know</h3>
         <h4>Dictionaries</h4>
-        <p>When we are working with large amounts of data, we need a container to store things in. We also need a way to locate and access the indivudal items later.</p>
-        <p>Dictionaries in Python work similar to how they did in your highschool english class. A dictionary is a data structure that contains an unordered list of values. We can access the data in this dictionary by referring to it's "key". </p>
+        <p>When we are working with large amounts of data, we need a container to store things in. We also need a way to locate and access individual items later.</p>
+        <p>Dictionaries in Python work like how they did in your high school English class. A dictionary is a data structure that contains an unordered list of values. We can access the data in this dictionary by referring to it's "key".
+        </p>
         <p>In the example below, the key for the string, "seattle" is "word".</p>
         <script src="https://gist.github.com/chollma/0b019313efe53b7333566b167e104c3d.js"></script>
         <h4>Else if statements</h4>
-        <p>Abbreviated as elif in our code, an else if statement allows us to test if a condition is true or false when there are multiple potential cases possible.</p>
-        <p>In the example below, if the variable "name" does not equal "sonya", the first block of code is skipped and the program moves on to the second condition. We'll use these heavily in our example to follow.</p>
+        <p>Abbreviated as "elif" in our code, this statement allows us to test if a condition is true or false when there are many potential cases possible.</p>
+        <p>In the example below, if the variable "name" does not equal "sonya", the first block of code won't run and the program moves on to the second condition. We'll use these many times in our example to follow.</p>
         <script src="https://gist.github.com/chollma/e5b35a9a439a1443399ab6480845e6fc.js"></script>
         <h4>If statements</h4>
         <p>If statements are a little bit less complex than else if statements, because there is only one case we're evaluating.</p>
