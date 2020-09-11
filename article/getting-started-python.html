@@ -92,11 +92,10 @@
             new program by selecting "File" and then "New File"</p>
         <h2>The Key Principles</h2>
         <p>Now that we have a blank file in front of us, it's time to start putting our ideas on paper. Before we do that, though, we'll want to understand some of the building blocks available to us in Python.</p>
-        <p>Every programming language has a set of words, phrases, and symbols that go together to create a "syntax". This is how a computer can process the things we give them and return our desired result. One of the best things about Python is that it's
-            syntax is pretty simple. We won't need to end each line of code with a semi-colon or a closing bracket like other languages.</p>
+        <p>Every programming language has a "syntax". This is a set of words, phrases, and symbols that provide specific instructions to the computer. This is how a computer can process the things we give them and return our desired result. One of the best
+            things about Python is that it's syntax is pretty simple. We won't need to end each line of code with a semi-colon or a closing bracket like other languages.</p>
         <p>
-            I've listed the terms below you should know to build the program in the next article, but I'd recommend still reviewing the <a href="https://docs.python.org/3/reference/index.html">Python Language Reference</a> which contains a full list of
-            terms.
+            I've listed some terms below you should know as you're building your own program in the next article. In the future, I'd recommend reviewing the <a href="https://docs.python.org/3/reference/index.html">full vocabulary</a>.
         </p>
         <h3>Syntax to Know</h3>
         <h4>Dictionaries</h4>
@@ -106,38 +105,40 @@
         <p>In the example below, the key for the string, "seattle" is "word".</p>
         <script src="https://gist.github.com/chollma/0b019313efe53b7333566b167e104c3d.js"></script>
         <h4>Else if statements</h4>
-        <p>Abbreviated as "elif" in our code, this statement allows us to test if a condition is true or false when there are many potential cases possible.</p>
-        <p>In the example below, if the variable "name" does not equal "sonya", the first block of code won't run and the program moves on to the second condition. We'll use these many times in our example to follow.</p>
+        <p>Abbreviated as "elif" in our code, this statement allows us to test if a condition is true or false when there are many cases possible.</p>
+        <p>Look at the example below. If the variable, "name" does not equal "sonya", the first block of code won't run and the program moves to the second condition. We'll use these many times in our program.</p>
         <script src="https://gist.github.com/chollma/e5b35a9a439a1443399ab6480845e6fc.js"></script>
         <h4>If statements</h4>
-        <p>If statements are a little bit less complex than else if statements, because there is only one case we're evaluating.</p>
-        <p>In the example below, if the variable "age" is greater than 30, nothing is printed out and the program exits.</p>
+        <p>If statements are a little bit less complex than else if statements. With these, there is only <strong>one</strong> case we're evaluating.</p>
+        <p>In the example below, if the variable "age" is greater than 30, nothing prints out, and the program exits.</p>
         <script src="https://gist.github.com/chollma/c7936234a2ab061b1408e62370121228.js"></script>
         <h4>Import()</h4>
-        <p>Sometimes someone has already developed an elegant solution to a problem so we don't have to. We use the import statement at the begining of a program to add additional functionality that we want to use later in the program.</p>
+        <p>Sometimes, someone has already developed an elegant solution to a problem so we don't have to.</p>
+        <p>The import statement at the beginning of a program allows us to pull in what's called a "library". This adds more functionality that we want to use later in the program. </p>
         <script src="https://gist.github.com/chollma/b6076ca9c2169d66f8fe329973bdae3f.js"></script>
         <h4>Input()</h4>
-        <p>This function prompts the user for keyword input.</p>
+        <p>What if we want to collect information from a user to use in our program? The input function allows us to do this. In the example below, we've used it to collect a user's age and assign it to the "age" variable.</p>
         <script src="https://gist.github.com/chollma/3c6dbba334a733728ba55c25a68a56a7.js"></script>
         <h4>Len()</h4>
-        <p>This function returns the number of items in the object it's called on.</p>
+        <p>This one is pretty straight forward. The length function returns the number of items in the object it's called on. For example, if I call it on a string of text (below), it will return the number of characters (with spaces) of that string.</p>
         <script src="https://gist.github.com/chollma/3483197ab978555194a24d2fc9fa3d3d.js"></script>
         <h4>Libraries</h4>
-        <p>Libraries are common in any programming language. These are reusable snippets of code that we'll use to perform complex actions. Other developers have built out useful functionality that is has many uses and can be applied to different problems.</p>
+        <p>Libraries are common in any programming language. These are reusable snippets of code that we'll use to perform complex actions. Other developers have built out useful code that has many uses and that we can apply to our problem.</p>
         <p>We'll use two different libraries in our program: <a href="https://requests.readthedocs.io/en/master/">Requests</a> and <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a></p>
         <h4>Lower()</h4>
-        <p>This method returns a lowercased string</p>
+        <p>One of the downsides of taking user input is that the user could use capitalization. This can break your program if you haven't accounted for this. We'll use the lower method to lowercase all our user input. This way, we don't have to worry about
+            it later.</p>
         <script src="https://gist.github.com/chollma/f3a47ad904759db681888b68f651939c.js"></script>
         <h4>Print()</h4>
-        <p>This method is used for printing data or a message to the screen. When we use this method in our program, it'll display our text in the interactive shell.</p>
+        <p>This method prints data or a message to the screen. When we use this method in our program, it'll display our text in the interactive shell. </p>
         <script src="https://gist.github.com/chollma/9c9ec2bc64f048836e56404b3ea9d094.js"></script>
         <h4>Str()</h4>
-        <p>This method returns a string of the contained object.</p>
+        <p>Sometimes it's easier to work with information if we turn it into a string of text. This is especially true when we want to parse HTML and search that HTML for something. We'll use the string method to turn data into strings of text.</p>
         <script src="https://gist.github.com/chollma/e29c230f3cace7ef792b209f874326be.js"></script>
         <h2>Doing Something Useful</h2>
         <p>Now that you've completed the steps above to get the Python IDE installed on your machine, and you're familiar with some of the moving parts, let's use the methods, functions, and libraries we've learned to build something useful that will help
             you in your everyday job.</p>
-        <p>We're going to <a href="https://cooperhollmaier.com/article/build-a-simple-program">build a tool</a> to request a webpage and determined if the data returned to us meets a set of requirements we set.</p>
+        <p>We're going to <a href="https://cooperhollmaier.com/article/build-a-simple-program">build a tool</a> to request a webpage and determine if the data returned to us meets a set of requirements we set.</p>
     </article>
 
     <!--Footer-->
