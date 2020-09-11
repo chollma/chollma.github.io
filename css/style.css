@@ -392,6 +392,7 @@ section {
 }
 
 .gist {
+    margin-top: 1em;
     max-width: 100%;
     overflow: auto;
     grid-column: 2;
