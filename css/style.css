@@ -307,6 +307,10 @@ section {
     padding-top: 1em;
 }
 
+.article-author-link {
+    text-decoration: none;
+}
+
 .about-me {
     grid-column: 4;
 }
