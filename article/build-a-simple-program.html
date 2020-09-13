@@ -97,9 +97,24 @@
                         <li>we'd like to import and use two libraries (Requests and Beautiful Soup)</li>
                         <li>we'd like to print out some introductory statements to help the user know the program is running </li>
                         <li> we'd like to prompt the user for a URL, which we'll assign as a string to a variable, "url"</li>
-
                     </ul>
                 </p>
+                <p>Next, we're going to need to create a variable to store the page we're requesting with the Requests library and a variable to store our parsed HTML from Beautiful Soup. I decided to name these in an obvious fashion.</p>
+                <script src="https://gist.github.com/chollma/c0321fc651827880e7f35275231d0e4b.js"></script>
+                <p>Now it'd be silly if we stopped here. If you wanted to look at the source code of a particular webpage, you could have easily done this with your browser. You didn't need Python to get this far.</p>
+                <p>If you've gotten this far, I assume that you're looking to parse a webpage for <em>specific elements</em>. Let's set-up the next part of the program to allow you to parse to your hearts desire. We'll be building a dictionary with all the
+                    things you want to find.</p>
+                <script src="https://gist.github.com/chollma/b6efb3594ec1072ac60518ab1b73003a.js"></script>
+                <p>Let's start with a few simple dictionary definitions (we'll add some more later). If you add a print statement to the end of your program and run it, here's what you should get.
+                    <h3>Code</h3>
+                    <script src="https://gist.github.com/chollma/063c0e616aade4bfd3f6fa02948b360b.js"></script>
+                    <h3>Output</h3>
+                    <script src="https://gist.github.com/chollma/8d5b2982524390a97daae33a2d168970.js"></script>
+                </p>
+                <p>If your program is functioning the same way as mine is, you've done it. You've created a functional program that takes a URL, executes an HTTP request, parses the HTML that comes back and prints out the HTTP response code and the title
+                    of the page.</p>
+                <p>If you're like me though, you've seen the possibilities and now you're hungry for more. The reason I intially came up with this program was to look at a page on this blog and make sure that it met my own quality guidelines. Let's define
+                    some conditions that we want to be true and then build some tests in Python to check if they are on our test page.</p>
                 <h2>Running the Tests</h2>
                 <h2>Interpretting the Results</h2>
                 <h2>Homework</h2>
