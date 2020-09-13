@@ -51,7 +51,7 @@
             <span class="article-meta-data-item">September 11, 2020, 3:52pm PST</span>
         </div>
         <p class="article-note">This article is the sequel to <a href="https://cooperhollmaier.com/article/getting-started-python">Getting Started with Python.</a></p>
-        <p>In the last article, I walked you through setting up Python on your machine, the inner workings of an Integrated Developement Environment (IDE), and left you with some helpful methods that we'll use to build a working program in Python.</p>
+        <p>In the last article, I walked you through setting up Python on your machine, the inner workings of an Integrated Development Environment (IDE), and left you with some helpful methods that we'll use to build a working program in Python.</p>
         <p>Let's get started.</p>
         <h2>Documentation</h2>
         <p>Everytime I'm working on a new project, I like to document what I'm doing and why I'm doing it, so I can organize my thoughts and look back at it later. It may be a little extra work, but you'll thank yourself when you're building the next cool
@@ -88,7 +88,7 @@
                 </ul>
                 <p>Now that we've got the libraries we'll need for our project installed, let's add a few more lines to the top of the file. These are purely cosmetic.</p>
                 <script src="https://gist.github.com/chollma/eb664766cc205f5419dfa2e52de3ef41.js"></script>
-                <p>One more quick addition and we'll start parsing some code on the webpage of our choice. Let's add a variable called "url" that we'll pass user input to. This will allow us to dynamically change the URL we're testing.</p>
+                <p>One more quick addition and we'll start parsing some code on the web page of our choice. Let's add a variable called "url" that we'll pass user input to. This will allow us to dynamically change the URL we're testing.</p>
                 <p>If you're following along, you should now have the following code written:</p>
                 <script src="https://gist.github.com/chollma/48044f25b778e603d2be959718c46cef.js"></script>
                 <h2>Parsing the Document</h2>
@@ -102,8 +102,8 @@
                 <p>Next, we're going to need to create a variable to store the page we're requesting with the Requests library and a variable to store our parsed HTML from Beautiful Soup. I decided to name these in an obvious fashion.</p>
                 <script src="https://gist.github.com/chollma/c0321fc651827880e7f35275231d0e4b.js"></script>
                 <p>Now it'd be silly if we stopped here. If you wanted to look at the source code of a particular webpage, you could have easily done this with your browser. You didn't need Python to get this far.</p>
-                <p>If you've gotten this far, I assume that you're looking to parse a webpage for <em>specific elements</em>. Let's set-up the next part of the program to allow you to parse to your hearts desire. We'll be building a dictionary with all the
-                    things you want to find.</p>
+                <p>If you've gotten this far, I assume that you're looking to parse a webpage for <em>specific elements</em>. Let's set-up the next part of the program to allow you to parse to your heart's desire. We'll be building a dictionary with all
+                    the things you want to find.</p>
                 <script src="https://gist.github.com/chollma/b6efb3594ec1072ac60518ab1b73003a.js"></script>
                 <p>Let's start with a few simple dictionary definitions (we'll add some more later). If you add a print statement to the end of your program and run it, here's what you should get.
                     <h3>Code</h3>
@@ -113,9 +113,35 @@
                 </p>
                 <p>If your program is functioning the same way as mine is, you've done it. You've created a functional program that takes a URL, executes an HTTP request, parses the HTML that comes back and prints out the HTTP response code and the title
                     of the page.</p>
-                <p>If you're like me though, you've seen the possibilities and now you're hungry for more. The reason I intially came up with this program was to look at a page on this blog and make sure that it met my own quality guidelines. Let's define
+                <p>If you're like me though, you've seen the possibilities and now you're hungry for more. The reason I initially came up with this program was to look at a page on this blog and make sure that it met my own quality guidelines. Let's define
                     some conditions that we want to be true and then build some tests in Python to check if they are on our test page.</p>
                 <h2>Running the Tests</h2>
+                <h3>Define the Requirements</h3>
+                <ol>
+                    <li>A page should return a 200 response code</li>
+                    <li>A page should have a title and it should only exist once in the code</li>
+                </ol>
+                <h3>Write the Code</h3>
+                <p>Before we build a test, it's important that we have all the information in the format we need it in. The response code is easy, because this is a simple response from a server, not present in the source code of the page.</p>
+                <p>The title tag though, is a bit trickier. We want to find every title tag in the code, count the number that we found, and then assuming there is only one, print it out. To do this, we're going to use the find_all() method. This will search
+                    the entire parsed HTML for the title element and return the results in what's called a "result set" (this is similar to an array).</p>
+                <script src="https://gist.github.com/chollma/e50517557199f25ab8773d4944a110dd.js"></script>
+                <p>Notice when you run the program now, the title tag element is surrounded by square brackets. If there are two title elements on a page, you'll see both appear here, separated by a comma.</p>
+                <script src="https://gist.github.com/chollma/0d843598bad0b919f33004def5077981.js"></script>
+                <p>Now that the data we want to analyze is coming back in a helpful format, let's write some tests.</p>
+                <script src="https://gist.github.com/chollma/5f2a9bffb636aab5801ce2360eb9b342.js"></script>
+                <p>Notice the test I've created above. We know that response codes fall into five distinct families (1xx, 2xx, 3xx, 4xx, 5xx). We also know that the value returned by requests will be a number. Using this information, we can define the case
+                    we want, any possible other scenarios, and a fallback case if our cases don't match anything.</p>
+                <ul>
+                    <li>If the HTTP status is 200, "Okay" is printed to the shell</li>
+                    <li>If the page we provide is redirected, "Redirected" will print to the shell</li>
+                    <li>If we enter an invalid URL or the page returns a 404, "Not found" will be printed to the shell</li>
+                    <li>If the HTTP response is out of the bounds above, "Error" will print to the shell.</li>
+                </ul>
+                <p>Try this out with a few different URLs that you know should be redirected or return a 404 error. Did our program work?</p>
+                <p>Our second set of requirements dealt with the title tag. We want to make sure there is at minimum one title for the page. In addition, if there is a title, we want to make sure it's the only title.</p>
+                <script src="https://gist.github.com/chollma/417ef4907402952ce784e1703850b8e5.js"></script>
+                <p>So there you have it, now you have a working program that will test your requirements (in this case for the HTTP response and the title tag element).</p>
                 <h2>Interpretting the Results</h2>
                 <h2>Homework</h2>
 

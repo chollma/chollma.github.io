@@ -70,6 +70,7 @@ a {
     color: var(--clr-facebook);
 }
 
+ol,
 ul,
 li {
     grid-column: 2;
