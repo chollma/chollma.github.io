@@ -23,7 +23,7 @@
     <meta name="og:locale" content="en_US">
     <link rel="canonical" href="https://cooperhollmaier.com/article/build-a-simple-program" />
     <link rel="stylesheet" href="../css/style.css ">
-    <link rel="icon " type="image/png" href="img/favicon.png">
+    <link rel="icon " type="image/png" href="../img/favicon.png">
 </head>
 
 <body>
@@ -70,11 +70,39 @@
         <p>I built the original version of this program with a couple hundred more lines of messy code. Then I discovered dictionaries and it made this the code cleaner to read, and easier to work with. </p>
         <h2>Setting Up the File</h2>
         <p>Now that we've spent some time documenting our process and thinking about our goal, let's get down to coding.</p>
-        <p>The first thing that we're going to need to do is to open up the Python Shell and create a new file in the File Editor.</p>
-        <h2>Parsing the Document</h2>
-        <h2>Running the Tests</h2>
-        <h2>Interpretting the Results</h2>
-        <h2>Homework</h2>
+        <p>The first thing that we're going to need to do is to open up the Python Shell and create a new file in the File Editor. In this blank file editor window is where we are going to write our first Python application.</p>
+        <p>The first two lines of code we're going to write are import statements. These will bring in the two libraries we're going to need to request a webpage from a server and parse it's HTML source code.</p>
+        <script src="https://gist.github.com/chollma/f366876617a64fcbc0737f3be2162b22.js"></script>
+        <p>You might notice that if you try and save and run this program now, it won't work. This is because we haven't installed the libraries we'll need on your machine. Let's do that now.</p>
+        <p><strong>If you're on a Mac:</strong><br>
+            <p></p>
+            <p><strong>If you're on Windows:</strong><br>
+                <ul>
+                    <li>Open up Command Prompt</li>
+                    <li>Type "cd C:\Program Files (x86)\Python37-32\Scripts" and press Enter
+                        <li>Type "pip install requests" and press Enter</li>
+                        <li>Once the requests library is installed, we'll want to install Beautiful Soup</li>
+                        <li>Type "pip install bs4" and press Enter</li>
+                        <li>Once the installation finishes, we can go back to the file editor.</li>
+                    </li>
+                </ul>
+                <p>Now that we've got the libraries we'll need for our project installed, let's add a few more lines to the top of the file. These are purely cosmetic.</p>
+                <script src="https://gist.github.com/chollma/eb664766cc205f5419dfa2e52de3ef41.js"></script>
+                <p>One more quick addition and we'll start parsing some code on the webpage of our choice. Let's add a variable called "url" that we'll pass user input to. This will allow us to dynamically change the URL we're testing.</p>
+                <p>If you're following along, you should now have the following code written:</p>
+                <script src="https://gist.github.com/chollma/48044f25b778e603d2be959718c46cef.js"></script>
+                <h2>Parsing the Document</h2>
+                <p>So far in our program, we've told the computer:
+                    <ul>
+                        <li>we'd like to import and use two libraries (Requests and Beautiful Soup)</li>
+                        <li>we'd like to print out some introductory statements to help the user know the program is running </li>
+                        <li> we'd like to prompt the user for a URL, which we'll assign as a string to a variable, "url"</li>
+
+                    </ul>
+                </p>
+                <h2>Running the Tests</h2>
+                <h2>Interpretting the Results</h2>
+                <h2>Homework</h2>
 
     </article>
 
