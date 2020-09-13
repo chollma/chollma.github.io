@@ -55,6 +55,6 @@ setInterval(function printQuote() {
         outputHTML += ' <span class="citation">' + responseQuote.citation + '</span>';
     }
     outputHTML += '</p>';
-    document.getElementById('rq-quote-box').innerHTML = outputHTML;
-    document.querySelector('div').style.boxShadow = '0 4px 8px 0 ' + responseColor;
+    document.getElementById('quote-box').innerHTML = outputHTML;
+    document.getElementById('quote-box').style.boxShadow = '0 4px 8px 0 ' + responseColor;
 }, 10000);
