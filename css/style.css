@@ -180,6 +180,11 @@ h3 {
     width: 100%;
 }
 
+.button-rq-shuffle {
+    grid-column: 2;
+    padding: 1em;
+}
+
 
 /* Content */
 
