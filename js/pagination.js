@@ -1,15 +1,9 @@
-/******************************************
-Student: Cooper Hollmaier
-Project: Techdegree - Unit 2
-Intended Behavior: List Filter and Pagination
-Goal: Meets Expecatations
-******************************************/
 /* Global Variables */
-const list = document.getElementsByClassName('book-list');
-const display = document.getElementsByClassName('book-list-item');
+const list = document.getElementsByTagName('li');
+const display = document.getElementsByClassName('article-list');
 const count = 5;
 const div = document.createElement('div');
-const container = document.getElementsByClassName('container');
+const container = document.getElementsByClassName('page');
 
 /* Display the supplied list with the given constraints on page size */
 function showPage(list, page) {
@@ -29,7 +23,6 @@ function addPagination(list) {
     div.className = "pagination";
     let ul = document.createElement('ul');
     div.appendChild(ul);
-    
 
     for (let i = 0; i < (list.length) / count; i++) {
         let li = document.createElement('li');
@@ -58,5 +51,5 @@ function addPagination(list) {
 
 }
 
-showPage(display, 1);
+showPage(list, 1);
 addPagination(display);

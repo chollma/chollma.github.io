@@ -359,6 +359,10 @@ section {
     padding: 0.5em;
 }
 
+.article-list-item {
+    list-style: none;
+}
+
 
 /* Footer */
 
