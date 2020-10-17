@@ -76,7 +76,7 @@ ol,
 ul,
 li {
     grid-column: 2;
-    margin: 1;
+    margin: .5em;
 }
 
 strong {
