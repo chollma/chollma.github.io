@@ -240,7 +240,6 @@ section {
     margin-bottom: .5rem;
     padding: .5em;
     height: 7.25rem;
-    border-top: 1px solid var(--clr-med);
 }
 
 .article-card-title {
