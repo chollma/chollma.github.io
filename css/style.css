@@ -369,9 +369,10 @@ section {
 .article-note-alt {
     margin-top: .25em;
     margin-bottom: .25em;
-    border-left: 1em solid var(--clr-dark);
+    border-left: .5em solid var(--clr-dark);
     margin: 0;
     padding: 0.5em;
+    font-size: var(--fs-h3);
 }
 
 .article-list-item {
