@@ -10,13 +10,13 @@
     --fw-med: 500;
     --fw-bold: 600;
     --clr-light: #fff;
-    --clr-med: #838181;
+    --clr-med: #585656;
     --clr-dark: #303030;
     --clr-accent: #405E58;
     --clr-topic-edu: #1F739D;
     --clr-topic-comm: #8A3222;
     --clr-twitter: #1DA1F2;
-    --clr-facebook: #3977f2;
+    --clr-facebook: #0D4CC9;
     --fs-h1: 1.5rem;
     --fs-h2: 1.25rem;
     --fs-h3: 1.025rem;
@@ -96,6 +96,8 @@ h6 {
     font-weight: var(--fw-bold);
     grid-column: 2;
     line-height: 1;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 h1 {
@@ -109,6 +111,10 @@ h2 {
 
 h3 {
     font-size: var(--fs-h3);
+}
+
+h4 {
+    margin-bottom: -.10em;
 }
 
 .error-title {
