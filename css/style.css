@@ -366,6 +366,14 @@ section {
     padding: 0.5em;
 }
 
+.article-note-alt {
+    margin-top: .25em;
+    margin-bottom: .25em;
+    border-left: 1em solid var(--clr-dark);
+    margin: 0;
+    padding: 0.5em;
+}
+
 .article-list-item {
     list-style: none;
 }
