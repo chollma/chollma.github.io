@@ -394,6 +394,12 @@ section {
     margin-left: 1.5em;
 }
 
+.return {
+    grid-column: 2;
+    text-align: center;
+    margin-top: 2em;
+}
+
 
 /* Footer */
 
