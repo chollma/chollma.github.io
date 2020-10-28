@@ -400,6 +400,18 @@ section {
     margin-top: 2em;
 }
 
+.related-articles-container {
+    grid-column: 2;
+}
+
+.related-articles {
+    list-style: none;
+}
+
+.related-articles li {
+    margin: 0;
+}
+
 
 /* Footer */
 
